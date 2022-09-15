@@ -2,7 +2,7 @@ const bcrypt = require("bcrypt"); //Bcrypt permet de crypter le mot de passe en 
 const jwt = require("jsonwebtoken"); //Jsonwebtoken permet de créer et vérifier les tokens d'authentification
 const User = require("../models/user");
 
-
+//----- Creation utilisateur -----//
 exports.signup = (req, res, next) => {
     bcrypt.hash(req.body.password, 10) //Permet de hash le mot de passe sur 10 tour
     .then(hash => {
@@ -16,7 +16,7 @@ exports.signup = (req, res, next) => {
     })
     .catch(error => res.status(500).json({ error }));
 };
-
+//----- Connexion utilisateur -----//
 exports.login = (req, res, next) => {
     User.findOne({ email: req.body.email }) //Recherche de l'email de l'utilisateur dans la base de données
        .then((user) => {
@@ -32,7 +32,7 @@ exports.login = (req, res, next) => {
                             userId: user._id,
                             token: jwt.sign(
                             { userId: user._id },
-                            "MY_TOKEN_IS_VERY_SECRET", //Clé secrete
+                            process.env.JWT_MYSECRET, //Clé secrete
                             {expiresIn: "24h"} //Durée d'expiration du token
                             )
                         });
