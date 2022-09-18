@@ -13,9 +13,11 @@
 - Pour le projet le fichier .env n'est pas ignoré dans gitignore.
 
 1. Cloner <a href='https://github.com/ISANKOI/MartinJeremy_6_25082022'>l'application</a>.
+
 2. A l'aide de votre terminal se placer dans le dossier frontend de l'application
     - Installer les dépendances : npm install
     - Lancer : npm start
+
 3. A l'aide de votre terminal se placer dans le dossier backend de l'application
     - Installer les dépendances : npm install
     - Lancer : nodemon server
