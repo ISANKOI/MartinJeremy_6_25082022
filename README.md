@@ -10,18 +10,17 @@
 
 <h2>Test de l'application :</h2>
 
-- Cloner Front
+- Pour le projet le fichier .env n'est pas ignoré dans gitignore.
 
-1. Cloner le <a href='https://github.com/ISANKOI/MartinJeremy_6_25082022/tree/main/frontend'>frontend</a> de l'application.
-2. Installer les dépendances : npm install
-3. Lancer : npm start
+1. Cloner <a href='https://github.com/ISANKOI/MartinJeremy_6_25082022'>l'application</a>.
+2. A l'aide de votre terminal se placer dans le dossier frontend de l'application
+    - Installer les dépendances : npm install
+    - Lancer : npm start
 
-- Cloner Back
-
-1. Cloner le <a href='https://github.com/ISANKOI/MartinJeremy_6_25082022/tree/main/backend'>backend</a> de l'application.
+3. A l'aide de votre terminal se placer dans le dossier backend de l'application
 2. Pour le projet le fichier .env n'est pas ignoré dans gitignore.
-3. installer les dépendances : npm install
-4. lancer nodemon server
+    - Installer les dépendances : npm install
+    - Lancer : nodemon server
 
 - Front accessible a l'adresse : http://localhost:4200
 - Le backend répond à l'adresse: http://localhost:3000 (attention: authentification requise pour toutes les routes /api/sauces/)
