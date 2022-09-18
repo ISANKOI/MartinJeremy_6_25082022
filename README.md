@@ -16,9 +16,7 @@
 2. A l'aide de votre terminal se placer dans le dossier frontend de l'application
     - Installer les dépendances : npm install
     - Lancer : npm start
-
 3. A l'aide de votre terminal se placer dans le dossier backend de l'application
-2. Pour le projet le fichier .env n'est pas ignoré dans gitignore.
     - Installer les dépendances : npm install
     - Lancer : nodemon server
 
